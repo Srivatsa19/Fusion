@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+input[type='email'],
+input[type='text'],
+input[type='password'],
+input[type='number'],
+input[type='tel'],
+textarea {
+  @apply w-full p-2 border rounded-2xl border-gray-300 py-2 px-3 my-3;
+}
+
+button.login {
+  background-color: #F53850;
+  @apply w-full rounded-2xl p-2 text-white;
+}
