@@ -27,7 +27,15 @@ export default function Home() {
                         <h2 className='font-bold'>{place.address}</h2>
                         <h3 className='text-sm text-gray-500 font-bold'>{place.title}</h3>
                         <div className='mt-1'>
-                            <span className="font-bold">{place.price}</span> rupees per night
+                            <div className="flex items-center">
+                                <span className="font-bold"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                </span>
+                                <div className='font-bold'>
+                                    {place.price} / per night
+                                </div>
+                            </div>
                         </div>
                     </Link>
                 ))}
